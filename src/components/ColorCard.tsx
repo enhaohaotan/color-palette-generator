@@ -58,10 +58,16 @@ export default function ColorCard({
   }
 
   return (
-    <div ref={setNodeRef} style={style} {...attributes} {...listeners}>
-      <div className="text-center">
+    <div
+      ref={setNodeRef}
+      style={style}
+      {...attributes}
+      {...listeners}
+      className="h-full flex-1"
+    >
+      <div className="text-center relative flex-1 h-full">
         <div
-          className="h-36 w-48 cursor-pointer hover:scale-105"
+          className="h-full flex-1 sm:h-36 w-screen sm:w-30 md:w-36 lg:w-48 cursor-pointer sm:hover:scale-105"
           style={
             {
               ["--color-card"]: hex,
@@ -74,7 +80,7 @@ export default function ColorCard({
           }
           onClick={handleCopyClick}
         />
-        <div className="flex justify-between items-center pr-2">
+        <div className="w-full flex justify-between items-center flex-row sm:flex-col md:flex-row lg:pr-2 absolute bottom-0 z-10 sm:relative">
           <Button
             variant="ghost"
             className="font-mono uppercase cursor-pointer select-none"
@@ -92,7 +98,7 @@ export default function ColorCard({
             {locked ? (
               <LockKeyhole />
             ) : (
-              <LockKeyholeOpen className="text-neutral-400" />
+              <LockKeyholeOpen className="text-neutral-50 sm:text-neutral-400" />
             )}
           </Button>
         </div>
