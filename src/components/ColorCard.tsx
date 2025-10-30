@@ -67,7 +67,7 @@ export default function ColorCard({
     >
       <div className="text-center relative flex-1 h-full">
         <div
-          className="h-full flex-1 sm:h-36 w-screen sm:w-30 md:w-36 lg:w-48 cursor-pointer sm:hover:scale-105"
+          className="h-full flex-1 sm:h-36 w-screen sm:w-30 md:w-36 lg:w-48 cursor-pointer sm:hover:scale-105 hover:z-9999 hover:relative"
           style={
             {
               ["--color-card"]: hex,
