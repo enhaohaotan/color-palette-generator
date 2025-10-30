@@ -1,6 +1,8 @@
 import Palette from "@/components/Palette";
 import { fetchColors } from "./actions/colors";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   const initialHexes = await fetchColors();
 
