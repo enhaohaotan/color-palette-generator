@@ -29,6 +29,7 @@ export async function fetchColors(): Promise<string[]> {
   try {
     const res = await timeoutFetch(URL, {
       method: "POST",
+      cache: "no-store",
       headers: {
         "Content-Type": "application/json",
       },
@@ -55,6 +56,7 @@ export async function fetchColorsWithLocks({
       .map((rgb, idx) => (locked[idx] ? rgb : "N"));
     const res = await timeoutFetch(URL, {
       method: "POST",
+      cache: "no-store",
       headers: {
         "Content-Type": "application/json",
       },
