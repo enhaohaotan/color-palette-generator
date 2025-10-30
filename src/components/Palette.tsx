@@ -156,7 +156,7 @@ export default function Palette({ initialHexes }: { initialHexes: string[] }) {
         </SortableContext>
       </DndContext>
 
-      <div className="flex sm:flex-col w-screen sm:w-auto">
+      <div className="flex sm:flex-col w-screen sm:w-auto  pb-[env(safe-area-inset-bottom)]">
         <div className="flex justify-center items-center sm:mt-4 md:mt-8 gap-4">
           <Button
             className={`${

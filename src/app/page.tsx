@@ -7,7 +7,7 @@ export default async function Home() {
   const initialHexes = await fetchColors();
 
   return (
-    <div className="flex flex-col items-center h-screen">
+    <div className="flex flex-col items-center h-dvh">
       <header className="hidden sm:block sm:text-4xl font-bold my-30 select-none ">
         Color Palette Generator
       </header>

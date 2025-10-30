@@ -59,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${notoSans.variable} ${notoSansMono.variable} antialiased pb-[env(safe-area-inset-bottom)]`}
+        className={`${notoSans.variable} ${notoSansMono.variable} antialiased`}
       >
         {children}
         <Toaster
